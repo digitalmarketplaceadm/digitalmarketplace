@@ -2,9 +2,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+	padding: 0 77px;
 }
-
+.container {
+	max-width: 100%
+}
+img {
+	max-width: 100%;
+}
+p {
+	color: #636363;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #2B2B2B;
+}
 /* Header Styling */
 /* Navigation Menu */
 .nav-item .nav-link {
@@ -57,6 +68,211 @@ header img {
 header span {
     font-size: 18px;
     font-weight: bold;
+}
+/* Index */
+.promo-banner h1 {
+	font-family: Playfair Display;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 130%;
+	text-align: center;
+}
+.promo-banner p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+	padding: 15px;
+}
+.promo-banner .btn-primary {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	width: 137;
+	padding: 12px 24px;
+	border-radius: 50px;
+	background: #2979E4;
+} 
+.promo-banner .form-control {
+	border: 1px solid #D9D9D9;
+	border-radius: 50px;
+}
+.promo-banner {
+	height: 645px;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.floating-img1 {
+	position: absolute;
+    top: 0;  
+    left: 50%;  
+    transform: translateX(-50%); 
+}
+.floating-img2 {
+	position: absolute;
+    top: 23%;
+    left: 13%;
+}
+.floating-img3 {
+	position: absolute;
+    top: 23%;
+    right: 13%;
+}
+.floating-img4 {
+	position: absolute;
+    bottom: 23%;
+    left: 5%;
+}
+.floating-img5 {
+	position: absolute;
+    bottom: 23%;
+    right: 5%;
+}
+/* Features section */
+.features-section h2, .your-store h2, .testimonial h2, .support h2 {
+	font-family: Playfair Display;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 100%;
+}
+.features-section p, .your-store p, .testimonial p, .support p{
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+}
+.features-section h4 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+}
+.features-section .btn-primary, .support .btn-primary {
+	color: #2979E4;
+	background: #EBF4FF;
+	padding: 12px 24px;
+	border-radius: 50px;
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	max-width: 164px;
+}
+.features-section .col-md-6 {
+	border: 1px solid #d9d9d9;
+	padding: 16px;
+	border-radius: 16px;
+	width: 47%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.your-store h3 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+}
+.testimonial .col-md-4 {
+	border: 1px solid #D9D9D9;
+	border-radius: 12px;
+	width: 30%;
+	padding: 15px;
+}
+.testimonial .bi-quote::before {
+	color: #2979E41A;
+	font-size: 42px;
+}
+.testimonial-text {
+	font-family: Inter;
+	font-weight: 400;
+	font-style: italic;
+}
+.testimonial-name {
+	font-weight: 600;
+	font-size: 16px;
+	margin: 0;
+}
+.testimonial-role {
+	font-weight: 400;
+	font-size: 12px;
+	margin: 0;
+}
+.testimonial-img {
+	
+}
+.product-tabs .nav {
+	border: none;
+	padding: 8px 0;
+}
+.product-tabs .nav-link {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 36px;
+	letter-spacing: 2.8px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+.product-tabs .nav .active {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background: #EBF4FF;
+	color: #2979E4;
+}
+.product-tabs .tab-content {
+	padding: 16px;
+    margin-top: 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 12px;
+}
+.product-tabs .title {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: -0.24px;
+	color: #2B2B2B;
+	padding-top: 16px;
+}
+.product-tabs .price {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: -0.3px;
+	color: #185CFF;
+}
+.tab-pane .col-md-4 {
+	max-width: 32%;
+	padding: 0;
+}
+.product-title-price {
+	margin: 0;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border: 1px solid #D9D9D9;
+	border-top: none;
+}
+.tab-pane img {
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.support h4 {
+	font-weight: 600;
+	font-size: 18px;
+}
+.support p {
+	font-weight: 400;
+	font-size: 16px;
+}
+.support .col-md-6 .row .col-md-6  {
+	border: 1px solid #d9d9d9;
+    padding: 16px;
+    border-radius: 16px;
+	width: 48%;
 }
 /* Responsive Adjustments */
 @media (max-width: 768px) {
