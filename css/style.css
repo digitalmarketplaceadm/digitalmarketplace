@@ -1,0 +1,72 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+/* Navigation Menu */
+.nav-item .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #636363;  
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 4px;
+    text-decoration: none; 
+}
+.nav {
+	border-radius: 50px;
+	border: 1px solid #eaeaea;
+	padding: 8px;
+}
+.nav-item .active {
+    background: #EBF4FF;
+	color: #2979E4;
+	border-radius: 50px;
+; 
+}
+
+/* Active Menu Item */
+
+
+#header .btn-primary {
+    background: #2979E4;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 50px;
+	padding: 10px 24px;
+}
+
+#header .btn-outline-primary {
+	padding: 10px 24px;
+	border-width: 1px;
+	border-radius: 50px;
+	border: 1px solid #2979E4;
+
+}
+
+header img {
+    height: 40px;
+}
+
+header span {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
