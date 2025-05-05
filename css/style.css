@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-	padding: 0 77px;
+	padding: 0 5%;
 }
 .container {
 	max-width: 100%
@@ -274,10 +274,49 @@ header span {
     border-radius: 16px;
 	width: 48%;
 }
+.mobile-buttons {
+	display: none;
+}
 /* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+	.nav-item .nav-link {
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+	.floating-img2 {
+		left: 3%;
+	}
+	.floating-img4 {
+		left: 2%;
+	}
+	.floating-img3 {
+		right: 0%;
+	}
+	.floating-img5 {
+		right: 2%;
+	}
+	.features-section .col-md-6 {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.features-section p, .your-store p, .support p {
+		font-size: 14px;
+	}
+	.features-section .btn-primary {
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+	.your-store .col-md-6 .row {
+		padding: 0.5rem 0 !important;
+	}
+	.your-store .col-md-6, .support .col-md-6:nth-child(2) {
+		align-content: center;
+	}
+	
+}
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -285,4 +324,78 @@ header span {
         flex-direction: column;
         text-align: center;
     }
+	#header .btn-primary {
+		margin-bottom: 5px;
+	}
+	.floating-img2, .floating-img3 {
+		top: 3%;
+	}
+	.floating-img4, .floating-img5 {
+			bottom: 40%;
+	}
+	.promo-banner .input-group {
+		width: 80% !important;
+	}
+	.features-section h2 {
+		font-size: 35px;
+	}
+	.support .btn-primary {
+		padding: 12px 5px;
+		font-size: 14px;
+	}
+}
+/* Default styles for larger screens */
+.nav-menu {
+  display: flex; /* Keeps the nav inline on larger screens */
+}
+
+.navbar-toggler {
+  display: none; /* Hide the burger toggle on large screens */
+}
+
+.right-buttons {
+  display: block;
+}
+
+@media (max-width: 425px) {
+  .navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem; 
+  }
+  .nav-menu, .right-buttons {
+    display: none;
+  }
+
+  .nav-menu.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff; 
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  .nav-menu.open ul {
+	  display: flex;
+	  flex-direction: column;
+	  padding: 30px;
+	  margin-bottom: 16px;
+  }
+  .mobile-buttons {
+	  display: block;
+  }
+  .right-buttons-mobile {
+	  display: flex;
+    justify-content: center;
+  }
+  #header .btn-primary {
+	  margin: 0;
+  }
+  .promo-banner h1 {
+	  font-size: 24px;
+  }
 }
